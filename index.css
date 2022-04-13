@@ -1,0 +1,412 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: sans-serif;
+    background-color: rgb(238, 238, 238);
+}
+.navLogo{
+    position: relative;
+    top: -6px;
+    width: 89px;
+}
+.nav-item{
+    color:black;
+    font-weight:bolder;
+    text-decoration: none;
+    float: left;
+    padding: 10px;
+}
+.dropdown{
+position:relative;
+display: inline-block;
+}
+.dropdown-content{
+display: none;
+position: absolute;
+z-index: 1;
+background: white;
+
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+    width: 80%;
+  }
+
+.spaces{
+    margin-left: 380px;
+}
+.greyed{
+    color: rgb(215, 214, 213);
+}
+.blackbtn {
+    padding: 10px 30px;
+    background-color: black;
+    border-radius: 5px;
+    color: azure;
+    margin-top: 4px;
+}
+
+.centerText{
+    font-size: 35px;
+    text-align: center;
+    padding: 30px 330px;
+}
+.purpled{
+    color: rgb(149, 36, 255);
+}
+.centerpadding{
+    padding: 0px 30px;
+}
+
+.purplebtn {
+    padding: 10px 30px;
+    background-color: rgb(171, 92, 244);
+    border-radius: 5px;
+    color: black;
+    font-weight:bolder;
+    text-decoration: none;
+    position: relative;
+    left:40%;
+    
+}
+
+.column {
+    float: left;
+    width: 20%;
+  }
+  
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .whitebox{
+    padding: 43px 12px;
+
+    margin: 37px;
+    background-color: white;
+    border-radius: 5px;
+    color: black;
+    position: relative;
+  }
+  .whitebox img{
+        position: absolute;
+        top: 13px;
+        left: 37px;
+  }
+  .whitebox span{
+    position: absolute;
+    top: 62px;
+    left: 20px;
+    font-size: small;
+    font-weight: bolder;
+}
+ .smolimg img{
+width: 33%;  
+}
+  .paddingrc{
+      padding: 40px;
+  }
+
+.whitebg{
+    background: white;
+    text-align: center;
+    
+}
+.whitebg h6{
+    font-weight:lighter;
+}
+
+.column2p {
+    float: left;
+    width: 50%;
+  }
+  .row2p{
+      padding:100px;
+  }
+  
+  .row2p:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .whitebg_c1{
+    background: white;
+    
+    
+}
+.whitebg_c1 h6{
+    padding-top: 8px;
+    font-weight:lighter;
+}
+.whitebg_c2{
+    background: white;
+    
+    
+}
+.whitebg_c2 h6{
+    padding-top: 8px;
+    font-weight:lighter;
+}
+
+.colText{
+    padding: 100px;
+    position: relative;
+    right: 145px;
+    bottom: 78px;
+}
+.colText strong{
+    font-size: xx-small;
+}
+
+
+.column3p {
+    float: left;
+    width: 33.33%;
+  }
+  
+  
+  .row3p:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .whitebox3c{
+    padding: 43px 12px;
+
+    margin: 37px;
+    background-color: white;
+    border-radius: 5px;
+    color: black;
+    position: relative;
+  }
+  .colText3c{
+    padding-top: 30px;
+    
+}
+.colText3c h6{
+    padding-top: 10px;
+}
+.roundnum {
+    border: 3px solid lightgrey;
+    border-radius: 50px;
+    padding: 8px;
+    font-size: 12px;
+    width: 15px;
+    font-family: sans-serif;
+    color: grey;
+}
+
+.column2p_1 {
+    float: left;
+      }
+.leftcol{
+    width: 10%;
+}
+.rightcol{
+    width:90%;
+}
+  .row2p_1{
+        
+        padding-bottom: 34px;
+  }
+  
+  .row2p_1:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+.lightbluecard{
+    background: rgb(245, 245, 255);
+    border-radius: 15px;
+    padding: 30px 15px;
+    margin-left: 100px;
+    margin-right: 34px;
+}
+
+.cardsm {
+    border-radius: 15px;
+    background: rgb(255, 255, 255);
+    padding: 34px;
+ text-align: left;
+  margin: 15px;
+}
+.cardsm img{
+    width: 44px;
+    height: 44px;
+    border-radius: 30px;
+padding: 5px;
+}
+.cardsm h6{
+    font-weight: lighter;
+    font-size: xx-small;
+}
+.cardsm p{
+    font-weight: lighter;
+}
+
+.lightbluecard2{
+    background: rgb(245, 245, 255);
+    border-radius: 15px;
+    padding: 30px 15px;
+    margin-left: 34px;
+    margin-right: 34px;
+}
+
+.positionbtn1{
+    position: relative;
+    bottom: 79px;
+    left: 80%;
+}
+.positionbtn2 {
+    position: relative;
+    bottom: 115px;
+    left: 85%;
+    background-color: black;
+    color: aliceblue;
+}
+
+
+
+
+.topimgcard{
+    border: 1px solid rgb(220, 218, 218);
+    border-radius: 15px;
+    background-color: white;
+    width: 200px;
+}
+.topimgcard img{
+    border-radius: 15px 15px 0px 0px; 
+}
+.cardtexts{
+    padding: 10px 20px;
+}
+.cardtexts h6{
+    font-weight:lighter;
+    padding: 10px 0px;
+}
+.cardtexts p{
+    font-size: xx-small;
+    text-decoration: underline;        }
+
+
+.lightbluecard3{
+        background: rgb(245, 245, 255);
+        border-radius: 15px;
+       
+    }
+    
+    .fcol_1 {
+        float: left;
+        width: 40%;
+      }
+      
+      .fcol_2 {
+        float: left;
+        width: 20%;
+      }
+      .fcol_2 li{
+          list-style: none;
+          line-height: 1.6;
+      }
+      .fcol_1 li{
+        list-style: none;
+        line-height: 1.6;
+    }
+    .fcol_1 ul{
+        padding: 3px 84px;
+    }
+      .social{
+        padding: 5px 66px;
+    }      
+      
+      
+      .frow:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      .foot{
+          padding:61px;
+        font-size: smaller;
+        }
+
+
+        .finput {
+            left: -25%;
+            top: 44px;
+            padding: 5px;
+            width: 124px;
+        }
+        .fbutton {
+            left: -75px;
+            top: 44px;
+            /* width: 17px; */
+            padding: 7px;
+        }
+
+
+/* css for responsive site------------------------------------------------
+@media only screen and (max-width: 600px) {
+    .navLogo {
+        position: relative;
+        top: -6px;
+        width: 85%;
+    }
+    .nav-item{
+        display: none;
+    }
+    .centerText {
+        font-size: 48px;
+        text-align: center;
+        padding: 3px 50px;
+       
+    
+    }
+    .purplebtn {
+        padding: 10px 30px;
+        background-color: rgb(171, 92, 244);
+        border-radius: 5px;
+        color: black;
+        font-weight: bolder;
+        text-decoration: none;
+        position: relative;
+        left: 26%;
+        top: 20px;
+    }
+    .whitebox {
+        padding: 43px 61px;
+        margin: 37px;
+        background-color: white;
+        border-radius: 5px;
+        color: black;
+        position: relative;
+    }
+    .smolimg img {
+        width: 35%;
+    }
+    .paddingrc {
+        padding: 20px 66px;
+    }
+    .column{
+        width: 100%;
+    }
+    .column2p img{
+        display: none;
+    }
+    .column2p{
+        width:100%;
+    }
+    .row2p {
+        padding: 35px;
+    }
+    .colText{
+        padding: 0px;
+        position: relative;
+        right:0;
+        bottom: 0;
+    }
+  }*/
