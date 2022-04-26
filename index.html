@@ -10,10 +10,12 @@
     <div class="main-container">
       <!--Navigation area-->
       <nav>
-        <a class="nav-item"><img class="navLogo" src="images/logo.png"></a>
+        <a class="nav-item navilogo"><img class="navLogo" src="images/logo.png"></a>
+        <a class="nav-item burger-nav" ><img  src="images/menu.png" alt=""></a>
+        <div class="navchilds">
+          
         <div class="nav-item dropdown">
-          <span
-            >Services <img src="images/downarrow.png" width="8px"></span>
+          <span>Services <img src="images/downarrow.png" width="8px"></span>
           <div class="dropdown-content">
             <p>item 1</p>
           </div>
@@ -25,11 +27,13 @@
               <p>item 1</p>
             </div>
           </div>
+          <a class="nav-item blackbtn navright" href="">Contact</a>
+          <a class="nav-item navright" href=""  style="padding-left: 0px;">Sign Up</a>
+          <span class="nav-item greyed navright">|</span>
+          <a class="nav-item navright" href="" style="padding-right: 0px;">Log In</a>
         
-        <a class="nav-item spaces" href="" style="padding-right: 0px;">Log In</a>
-        <span class="nav-item greyed">|</span>
-        <a class="nav-item" href=""  style="padding-left: 0px;">Sign Up</a>
-        <a class="nav-item blackbtn" href="">Contact</a>
+        
+        </div>
       </nav>
       <!--nav area end-->
       <br><br><br>
@@ -46,33 +50,43 @@
       <article class="paddingrc">
         <div class="row">
             <div class="column">
-              <div class=" whitebox smolimg">
-                <img src="images/loan.png">
-                <span>Home Loan</span>
+              <div class=" whitebox">
+                <ul>
+                  <li><img src="images/loan.png"></li>
+                  <li><span>Home Loan</span></li>
+                </ul>
               </div>
             </div>
             <div class="column">
-              <div class=" whitebox smolimg">
-                <img src="images/tax.png">
-                <span style="left: 12px;">Personal Loan</span>
+              <div class=" whitebox">
+                <ul>
+                  <li><img src="images/tax.png"></li>
+                  <li><span>Personal Loan</span></li>
+                </ul>
               </div>
             </div>
             <div class="column">
-              <div class=" whitebox smolimg">
-                <img src="images/education-cost.png">
-                <span style="left: 14px;">Student Loan</span>
+              <div class=" whitebox">
+                <ul>
+                  <li><img src="images/education-cost.png"></li>
+                  <li><span>Student Loan</span></li>
+                </ul>
               </div>
             </div>
             <div class="column">
-              <div class=" whitebox smolimg">
-                <img src="images/debt.png">
-                <span style="left: 24px;">Devt Relif</span>
+              <div class=" whitebox">
+                <ul>
+                  <li><img src="images/debt.png"></li>
+                  <li><span>Devt Relif</span></li>
+                </ul>
               </div>
             </div>
             <div class="column">
-              <div class=" whitebox smolimg">
-                <img src="images/insurance.png">
-                <span style="left: 24px;">Insurance</span>
+              <div class=" whitebox">
+                <ul>
+                  <li><img src="images/insurance.png"></li>
+                  <li><span>Insurance</span></li>
+                </ul>
               </div>
             </div>
           </div>
@@ -81,7 +95,7 @@
       <!--center text area end-->
 <br><br><br><br>
 <!--our trusted clients area-->
-<div class="whitebg">
+<div id="otc" class="whitebg">
   <br><br>
   <h1>
    Our trusted clients
@@ -91,80 +105,76 @@
 
 <br><br>
 <article class="paddingrc">
-<div class="row">
-    <div class="column">
+<div class="orow">
       <div class="smolimg">
         <img src="images/nrc.png">
       </div>
-    </div>
-    <div class="column">
       <div class="smolimg">
         <img src="images/rtlz.png">
       </div>
-    </div>
-    <div class="column">
       <div class="smolimg">
         <img src="images/fd.png">
       </div>
-    </div>
-    <div class="column">
       <div class="smolimg">
         <img src="images/sprout.png">
       </div>
-    </div>
-    <div class="column">
       <div class="smolimg">
         <img src="images/quote.png">
       </div>
-    </div>
-  </div>
+</div>
+</article>
 </div>
 
 <!--our trusted clients area end-->
 
 <!--two column card and text 1st-->
-<div class=" whitebg_c1">
+<div id="tcct1" class=" whitebg_c1">
   <br><br><br>
-  <div class="row2p">
-    <div class="column2p">
+  <div class="trow">
+    <div class="tcol">
       <img src="images/col2_1.png" >
     </div>
-    <div class="column2p">
+    <div class="tcol">
       <div class="colText">
         <h3>if money is the problem, make us the solution</h3>
         <h6>Similarly, a loan taken out to buy a car may be secured by the car.The duration of the loan is much shorter.</h6>
         <br><strong>Get Started ></strong>
       </div>
-           
     </div>
+      
+           
+    
   </div>
 </div>
 <!--two column card and text 1st end-->
 <!--two column card and text 2nd-->
-<div class=" whitebg_c2">
+<div id="tcct2" class=" whitebg_c1">
   <br><br><br>
-  <div class="row2p">
-    <div class="column2p">
-      <div class="colText">
-        <h3>Comming soon.. the best odiil loan card with best solution</h3>
-        <h6>Unsecured loans are monetary  loans that are not secured against the borrower's assets.These may be available institutionspackages.</h6>
-        <br><strong>Learn more ></strong>
-      </div>
-           
-    </div>
-    <div class="column2p">
+  <div class="trow">
+    
+    <div class="tcol">
       <img src="images/col2_2.png" >
-    </div>
-  </div>
+      </div>
+      <div class="tcol">
+        <div class="colText">
+          <h3>Comming soon.. the best odiil loan card with best solution</h3>
+          <h6>Unsecured loans are monetary  loans that are not secured against the borrower's assets.These may be available institutionspackages.</h6>
+          <br><strong>Learn more ></strong>
+        </div>
+      </div>
+    
+    
 </div>
+
 <!--two column card and text 2nd end-->
+<br><br><br>
 <!--why trust us-->
 <div class="whitebg">
   <br><br>
   <h1>
    Why trust us?
   </h1>
-  <article class="paddingrc">
+  <article id="wtu" class="paddingrc">
     <div class="row3p">
         <div class="column3p">
           <div class=" whitebox3c smolimg">
@@ -448,10 +458,10 @@
   <div class="row2p">
     <div class="column2p">
       <strong class="greyed">NEWSLETTER</strong>
-      
-        <input class="purplebtn finput" style=" background-color: rgb(245, 245, 255);" placeholder="Enter your email"/>
-      <a class="purplebtn fbutton" href="">Subscribe</a>
-      
+      <div>
+<input class="finput"  placeholder="Enter your email"/>
+      <a class="fbutton" href="">Subscribe</a>
+      </div>
       
     </div>
     <div class="column2p greyed" style="font-size: xx-small;" >
@@ -460,5 +470,8 @@
   </div>
 </footer>
 <!--footer end-->
+
 </body>
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="menu.js"></script>
 </html>

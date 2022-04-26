@@ -2,6 +2,13 @@
     margin:0;
     padding:0;
 }
+.main-container nav{
+    padding: 2% 8%;
+    font-size: smaller;
+}
+.burger-nav{
+  display: none;
+}
 body{
     font-family: sans-serif;
     background-color: rgb(238, 238, 238);
@@ -35,10 +42,10 @@ background: white;
   }
 
 .spaces{
-    margin-left: 380px;
+    margin-left: 40%;
 }
 .greyed{
-    color: rgb(215, 214, 213);
+    color: rgb(123, 120, 117);
 }
 .blackbtn {
     padding: 10px 30px;
@@ -49,9 +56,9 @@ background: white;
 }
 
 .centerText{
-    font-size: 35px;
+    font-size: 3.5vw;
     text-align: center;
-    padding: 30px 330px;
+    padding: 5% 34%;
 }
 .purpled{
     color: rgb(149, 36, 255);
@@ -61,16 +68,16 @@ background: white;
 }
 
 .purplebtn {
-    padding: 10px 30px;
+    padding: 20px 30px;
     background-color: rgb(171, 92, 244);
     border-radius: 5px;
     color: black;
-    font-weight:bolder;
+    font-weight: bolder;
     text-decoration: none;
     position: relative;
-    left:40%;
-    
-}
+    left: 44%;
+    font-size: small;
+  }
 
 .column {
     float: left;
@@ -92,21 +99,25 @@ background: white;
     color: black;
     position: relative;
   }
-  .whitebox img{
-        position: absolute;
-        top: 13px;
-        left: 37px;
+  .whitebox ul{
+      list-style: none;
   }
-  .whitebox span{
-    position: absolute;
-    top: 62px;
-    left: 20px;
+
+  .whitebox li{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+  
+  }
+  .whitebox ul li img{
+      width: 33%;
+      
+  }
+  .whitebox ul li span{
     font-size: small;
     font-weight: bolder;
 }
- .smolimg img{
-width: 33%;  
-}
+ 
   .paddingrc{
       padding: 40px;
   }
@@ -116,9 +127,7 @@ width: 33%;
     text-align: center;
     
 }
-.whitebg h6{
-    font-weight:lighter;
-}
+
 
 .column2p {
     float: left;
@@ -152,15 +161,6 @@ width: 33%;
     font-weight:lighter;
 }
 
-.colText{
-    padding: 100px;
-    position: relative;
-    right: 145px;
-    bottom: 78px;
-}
-.colText strong{
-    font-size: xx-small;
-}
 
 
 .column3p {
@@ -342,71 +342,419 @@ padding: 5px;
             width: 124px;
         }
         .fbutton {
-            left: -75px;
-            top: 44px;
-            /* width: 17px; */
-            padding: 7px;
+            padding: 7px 14px;
+            background-color: rgb(171, 92, 244);
+            border-radius: 5px;
+            color: black;
+            font-weight: bolder;
+            text-decoration: none;
+
+            font-size: small;
         }
 
 
-/* css for responsive site------------------------------------------------
-@media only screen and (max-width: 600px) {
-    .navLogo {
+
+/*our trusted clients*/
+#otc.whitebg h6 {
+    font-weight: lighter;
+    font-size: smaller;
+    color: #555;
+  }
+#otc .orow{
+    display: flex;
+}
+
+#otc .smolimg img{
+    width:33%;
+}
+/*two column 1*/
+#tcct1 .trow{
+    display: flex;
+}
+#tcct1 .tcol{
+    flex: 50%;
+
+    display: flex;
+    justify-content: center;
+}
+#tcct1 .trow img{
+    width: 50%;
+}
+
+#tcct1 .colText{
+font-size: x-large;
+width: 50%;
+}
+#tcct1 .colText strong{
+    font-size: xx-small;
+}
+
+
+/*two column 2*/
+#tcct2 .trow{
+    display: flex;
+    flex-direction: row-reverse;
+}
+#tcct2 .tcol{
+    flex: 50%;
+
+    display: flex;
+    justify-content: center;
+}
+#tcct2 .trow img{
+    width: 50%;
+}
+
+#tcct2 .colText{
+font-size: x-large;
+width: 50%;
+}
+#tcct2 .colText strong{
+    font-size: xx-small;
+}
+/* why trust us */
+#wtu img{
+width:33%;
+}
+.navright{
+    float:right;
+}
+
+
+
+
+/* responsive  sections*/
+/* for width 1129px and less */
+@media screen and (max-width: 1129px){
+    .main-container nav {
+        padding: 2% 7%;
+        font-size: smaller;
+      }
+
+}
+@media screen and (max-width: 1103px){
+    .main-container nav {
+        padding: 2% 0;
+        width: 90%;
+        margin:0 auto;
+        font-size: smaller;
+      }
+      .navright{
+          float:right;
+      }
+      .whitebox ul li img {
+        width: 60%;
+      }
+      .whitebox ul li span {
+        font-size: x-small;
+        font-weight: bolder;
+      }
+      .whitebox {
+        padding: 7px 13px;
+        margin: 15px;
+        background-color: white;
+        border-radius: 5px;
+        color: black;
         position: relative;
-        top: -6px;
+      }
+      #tcct1 .trow img {
         width: 85%;
-    }
-    .nav-item{
-        display: none;
-    }
-    .centerText {
-        font-size: 48px;
-        text-align: center;
-        padding: 3px 50px;
-       
-    
-    }
-    .purplebtn {
-        padding: 10px 30px;
+      }
+      #tcct1 .colText {
+        font-size: x-large;
+        width: 100%;
+      }
+      #tcct2 .trow img {
+        width: 85%;
+      }
+      #tcct2 .colText {
+        font-size: x-large;
+        width: 90%;
+      }
+      .positionbtn1 {
+        position: relative;
+        bottom: 79px;
+        left: 77%;
+      }
+      .topimgcard {
+        border: 1px solid rgb(220, 218, 218);
+        border-radius: 15px;
+        background-color: white;
+        width: 96%;
+      }
+      .topimgcard img {
+        border-radius: 15px 15px 0px 0px;
+        width: 100%;
+      }
+      .lightbluecard {
+        background: rgb(245, 245, 255);
+        border-radius: 15px;
+        padding: 13px 15px;
+        margin-left: 35px;
+        margin-right: 34px;
+      }
+      .leftcol {
+        width: 20%;
+      }
+      .rightcol {
+        width: 80%;
+      }
+      .cardsm p {
+        font-weight: lighter;
+        font-size: x-small;
+      }
+      .purplebtn {
+        padding: 10px 12px;
         background-color: rgb(171, 92, 244);
         border-radius: 5px;
         color: black;
         font-weight: bolder;
         text-decoration: none;
         position: relative;
-        left: 26%;
-        top: 20px;
-    }
-    .whitebox {
-        padding: 43px 61px;
-        margin: 37px;
+        left: 44%;
+        font-size: smaller;
+      }
+      .fcol_1 ul {
+        padding: 2px 40px;
+      }
+      
+
+}
+/* tablets */
+@media screen and (max-width:767px){
+    .navLogo {
+        position: static;
+        
+        width: 147px;
+        margin: 0 auto;
+        display: flex;
+      }
+      .nav-item.naviLogo{
+        
+        float: none;
+        
+      }
+      .nav-item{
+          font-size: smaller;
+      }
+      .navchilds{
+          clear: left;
+      }
+      .centerText {
+        font-size: 6.5vw;
+        text-align: center;
+        padding: 5% 9%;
+      }
+      .purplebtn {
+        padding: 10px 12px;
+        background-color: rgb(171, 92, 244);
+        border-radius: 5px;
+        color: black;
+        font-weight: bolder;
+        text-decoration: none;
+        position: relative;
+        left: 37%;
+        font-size: x-small;
+      }
+      .column {
+        float: left;
+        width: 50%;
+      }
+      #otc .orow {
+        display: flex;
+        flex-wrap: wrap;
+        
+      }
+      #tcct1 .colText {
+        font-size: x-large;
+        width: 91%;
+      }
+      .whitebox3c {
+        padding: 16px 12px;
+        margin: 0px;
         background-color: white;
         border-radius: 5px;
         color: black;
         position: relative;
+      }
+      #wtu img {
+        width: 55%;
+      }
+      .paddingrc {
+        padding: 40px 9px;
+      }
+      .column2p{
+          width: 100%;
+      }
+      .column2p img{
+        display: none;
+ 
     }
-    .smolimg img {
-        width: 35%;
-    }
-    .paddingrc {
-        padding: 20px 66px;
-    }
-    .column{
+    .column3p{
         width: 100%;
     }
-    .column2p img{
+    .positionbtn1 {
+        position: relative;
+        bottom: 79px;
+        left: 85%;
+      }
+      .positionbtn2 {
+        position: relative;
+        bottom: 115px;
+        left: 100%;
+        background-color: black;
+        color: aliceblue;
+      }
+      .topimgcard{
+          margin:4%;
+      }
+      .purplebtn {
+        padding: 10px 12px;
+        background-color: rgb(171, 92, 244);
+        border-radius: 5px;
+        color: black;
+        font-weight: bolder;
+        text-decoration: none;
+        position: relative;
+        left: 37%;
+        font-size: x-small;
+        
+        top: 18px;
+      }
+      .foot {
+        padding: 13px;
+        font-size: x-small;
+      }
+      .fcol_1 ul {
+        padding: 0px 20px;
+      }
+      .social {
+        padding: 5px 40px;
+      }
+      .social .column3p{
+        width: 33.33%;
+      }
+
+}
+/* mobiles */
+@media screen and (max-width:480px){
+    .nav-item.naviLogo {
+        float: left;
+      }
+      .burger-nav {
+        display: block;
+       
+        /* position: relative;
+        top: 18px;
+        left: 200px; */
+       
+      }
+    .burger-nav img{
+        width: 10%;
+    }
+    .navchilds{
+        overflow: hidden;
+        background-color: gainsboro;
+         height:0; 
+    }
+    .navchilds.open{
+        height: auto;
+    }
+    /* .navchilds .nav-item{
+    float: none;
+    width: 100%;
+    } */
+    .navchilds .greyed{
         display: none;
     }
-    .column2p{
-        width:100%;
+    .navchilds{
+        display: flex;
+        flex-direction: column;
+    margin: 0;
     }
-    .row2p {
-        padding: 35px;
+    .navchilds .nav-item{
+        padding: 10px;
+        border-bottom: 1px solid black;
+        
     }
-    .colText{
-        padding: 0px;
-        position: relative;
-        right:0;
-        bottom: 0;
+    .blackbtn{
+        width: fit-content;
     }
-  }*/
+    .centerText {
+      font-size: 10.5vw;
+      text-align: center;
+      padding: 5% 9%;
+    }
+    .purplebtn {
+      padding: 25px 38px;
+      background-color: rgb(171, 92, 244);
+      border-radius: 5px;
+      color: black;
+      font-weight: bolder;
+      text-decoration: none;
+      position: relative;
+      left: 29%;
+      font-size: medium;
+      top: 18px;
+    }
+    .column {
+      width: 100%;
+    }
+    .whitebox ul li span {
+      font-size: medium;
+      font-weight: bolder;
+    }
+    #tcct1 .trow {
+      display: block;
+    }
+    #tcct2 .trow {
+      display: block;
+    }
+    #tcct1 .trow img {
+      width: 85%;
+      display: none;
+    }
+    #tcct2 .trow img {
+      width: 85%;
+      display: none;
+    }
+    #tcct1 .tcol {
+     
+      display: flex;
+      justify-content: center;
+    }
+    #tcct2 .tcol {
+     
+      display: flex;
+      justify-content: center;
+    }
+    .lightbluecard3 .row2p{
+      padding: 0px!important;
+    }
+    .lightbluecard3 .row2p .column2p {
+      width: 100%;
+      padding: 14px;
+    }
+    .lightbluecard3 .row2p .column2p .purplebtn {
+      padding: 8px 5px;
+      background-color: rgb(171, 92, 244);
+      border-radius: 5px;
+      color: black;
+      font-weight: bolder;
+      text-decoration: none;
+      position: relative;
+      left: 29%;
+      font-size: small;
+      top: 0px;
+    }
+    .fcol_1 {
+      float: left;
+      width: 100%;
+  padding: 22px 0px;
+    }
+    .fcol_2 {
+      float: left;
+      width: 100%;
+      padding: 22px 0px;
+    }
+}
